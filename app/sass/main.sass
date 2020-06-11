@@ -1,0 +1,498 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  outline: none
+  transition: .3s ease
+  &:hover
+    text-decoration: none
+
+.container
+  max-width: 1140px
+  width: 100%
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+
+.wrapper
+  background: #878787 url("../img/bg1.png") no-repeat center top
+    size: cover
+  padding: 50px 0 0
+
+.color-accent
+  color: $accent
+
+header
+  .container
+    box-shadow: 0 0 23px rgba(10, 10, 8, 0.23)
+    background: url("../img/bg3.jpg") no-repeat center
+      size: cover
+    padding: 57px 64px 134px 100px
+  .logo
+    margin: 0 auto 0 0
+  .phone
+    margin: 0 0 0 45px
+
+.name-company
+  font-size: 73px
+  font-family: $font
+  text-align: right
+  text-transform: uppercase
+  font-weight: 300
+  letter-spacing: 0.9px
+  p
+    color: #e21839
+    font-weight: bold
+
+.header-contacts
+  margin: 90px 0 0
+  display: flex
+  align-items: flex-start
+
+.icon-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 85px
+  margin: -10px 20px 0 0
+  position: absolute
+  left: 20px
+  bottom: 20px
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+
+.header-contacts__box
+  display: flex
+  align-items: center
+  letter-spacing: 0.13px
+  font-size: 12px
+  .icon
+    width: 23px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 7px 0 0
+  p
+    max-width: 185px
+
+.phone
+  font-size: 34px
+  font-weight: 300
+  font-family: $font
+  color: #000000
+  letter-spacing: 0.17px
+  .icon
+    width: 16px
+
+
+strong
+  display: inline-block
+  font-weight: bold
+
+//description-company
+.description-company
+  position: relative
+  z-index: 1
+  .container
+    box-shadow: 0 0 23px rgba(10, 10, 8, 0.23)
+    padding: 64px 95px 131px 100px
+    background: url("../img/bg2.png") no-repeat center #fff
+      size: cover
+    text-shadow: 1px 1px 0 #ffffff
+    color: #010101
+    letter-spacing: 0.17px
+
+
+//footer
+footer
+  color: #fff
+  .container
+    justify-content: space-between
+    align-items: center
+    padding: 38px 300px 48px 100px
+  .phone
+    color: #fff
+
+.footer-img
+  position: absolute
+  bottom: 0
+  right: -185px
+  max-width: 485px
+  width: 100%
+
+.footer-box
+  max-width: 250px
+  font-size: 12px
+  letter-spacing: 0.13px
+
+.color-yellow
+  color: #fedc35
+
+.copyright
+  margin: 13px 0 0
+
+//maps-toggle
+.maps-toggle
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 195px
+  position: relative
+  z-index: 1
+  margin: 0 0 0 auto
+
+.maps-toggle__box
+  display: flex
+  align-items: center
+  text-transform: uppercase
+  color: #fff
+  width: 100%
+  height: 74px
+  padding: 10px 5px 10px 13px
+  letter-spacing: 0.91px
+  font-weight: 700
+  font-family: $font
+  line-height: 18.68px
+
+  .number
+    font-size: 42px
+    font-family: $font
+    margin: 0 5px 0 0
+    text-transform: uppercase
+    letter-spacing: 2.53px
+    opacity: .3
+    font-weight: 300
+  &:first-child
+    background: #1780c3
+  &:nth-child(2)
+    background: #898989
+  &:nth-child(3)
+    background: #b85f63
+  &:nth-child(4)
+    background: #77b180
+  &:nth-child(5)
+    background: #856fa8
+  &:nth-child(6)
+    background: #9b715f
+  &:nth-child(7)
+    background: #ed7e30
+  &:nth-child(8)
+    background: #428694
+  &:nth-child(9)
+    background: #585847
+  &:nth-child(10)
+    background: #7fbfd0
+  &:nth-child(11)
+    background: #a55e83
+
+
+.maps-section
+  margin: -90px -100px -40px 100px
+  position: relative
+  z-index: 2
+  .container
+    align-items: stretch
+    justify-content: space-between
+    flex-wrap: wrap
+    &:before
+      content: ''
+      position: absolute
+      width: 1709px
+      height: 925px
+      background: url("../img/bg_birds.png") no-repeat center
+        size: contain
+      top: -187px
+      left: -240px
+
+.maps-wrapper
+  position: relative
+  width: calc(100% - 195px)
+  box-shadow: 0 0 23px rgba(10, 10, 8, 0.23)
+  height: 814px
+
+.maps-title
+  position: absolute
+  z-index: 5
+  top: 47px
+  left: 47px
+  font-size: 26px
+  font-family: $font
+  color: #3d3d3d
+  font-weight: 700
+  text-shadow: 0 0 21px #ffffff
+  text-transform: uppercase
+  max-width: 250px
+  width: 100%
+  line-height: 29.44px
+
+.maps
+  width: 100%
+  height: 100%
+  iframe
+    width: 100%
+    height: 100%
+
+
+.modal__div
+  position: fixed
+  width: 100%
+  max-width: 944px
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+  .modal__close
+    color: #ffffff
+    font-size: 31px
+    letter-spacing: 1.88px
+    text-transform: uppercase
+    cursor: pointer
+    text-align: center
+  .modal__wrapper
+    background: #fff
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+    box-sizing: border-box
+    position: relative
+    h2
+      font-size: 31px
+      font-family: $font
+      letter-spacing: 1.88px
+      text-transform: uppercase
+      font-weight: 700
+  .links
+    display: none
+
+.modal-body
+  padding: 25px 17px
+  .line
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+    margin: 0 0 25px
+  .photo
+    width: 100%
+    height: 569px
+    margin: 0 0 23px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &:last-child
+      margin: 0
+  .box-description
+    display: flex
+    align-items: center
+    margin: 0 36px 0 0
+    letter-spacing: 0.91px
+    font-size: 15px
+    font-weight: 700
+    .color
+      width: 24px
+      min-width: 24px
+      height: 24px
+      margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+
+.color-blue
+  background: #247cc7
+
+.color-pink
+  background: #d3187d
+
+.modal-title
+  background: #1780c3
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px 30px
+  color: #fff
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.6
+  -moz-opacity: 0.6
+  filter: alpha(opacity = 60)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+
+.marker
+  display: block
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  overflow: hidden
+
+.ymaps-image-with-content
+  background: transparent !important
+  width: 18px !important
+  height: 18px !important
+  border-radius: 50%
+
+.marker1
+  background-color: #1780c3
+
+.marker2
+  background: #898989
+  
+.marker3
+  background: #b85f63
+  
+.marker4
+  background: #77b180
+  
+.marker5
+  background: #856fa8
+
+.marker6
+  background: #9b715f
+  
+.marker7
+  background: #ed7e30
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: 50%
+    height: 100%
+    background: #9b715f
+    border-radius: 0 50px 50px 0
+  
+.marker8
+  background: #428694
+
+.marker9
+  background: #585847
+  
+.marker10
+  background: #7fbfd0
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: 50%
+    height: 100%
+    background: #585847
+    border-radius: 0 50px 50px 0
+  
+.marker11
+  background: #a55e83
+
+.ymaps-layers-pane
+  -webkit-filter: grayscale(100%)
+
+
+
+
+@import "media"
+// Всегда в конце
